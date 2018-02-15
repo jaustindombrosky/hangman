@@ -2,27 +2,28 @@ body {
     font-family:sans-serif; 
     font-weight:bold; 
     font-size:16pt;
+    background: url('https://www.worldmapsonline.com/images/murals/miller_world_physical_wall_mural_lg.jpg');
+    background-size: 100%;
 }
-/* Topmatter */
-.topmatter {
+.container {
     height:210px;    
 }
-.bottommatter{
-    background:#f1f1f1;
+.word-container{
     height:auto;
 }
 /* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
 .side-container {
     margin-top:45px;
     margin-left:130px;
-    width:170px;
+    width:180px;
     text-align:center;
+    opacity: .92;
 }
-.container-title {
+.guessed-letters {
     color:#6f5a2d;
 }
 .input-area {
-    width:75px;
+    width:180px;
     height:31px;
     margin:auto;
     padding:3pt;
@@ -43,10 +44,11 @@ body {
 }
 /* Word Box */
 .word-box {
-    width:250px;
+    width:320px;
     margin:auto;
     margin-top:25px;
     text-align:center;
+    opacity: .92;
 }
 .word-display {
     background:#ebe2ce;
