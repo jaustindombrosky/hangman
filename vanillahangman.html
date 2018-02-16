@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+    <div class='container'>
+        <div class='hangcontainer'>
+            <div class='scaffoldingtop'></div>
+            <div class='scaffoldingleft'></div>
+
+            <div class='scaffoldingbase'></div>
+        </div>
+        <div class='sidecontainer'>
+        <div class='containertitle'>Guess A Letter!</div>
+        <div class='inputarea'>
+          <input id='letterinput' type='text' maxlength='1'/>
+        </div>
+      </div>
+    
+      <div class='sidecontainer'>
+        <div class='containertitle'>Guessed Letters</div>
+        <div id="wrongletters" class='inputarea'></div>
+      </div>
+
+    <div class='wordcontainer'>
+        <div class='wordbox'>
+            <div class='worddisplay'>
+            </div>
+        </div>
+    </div>  
+
+
+<script type="text/javascript" src="vanillagame.js"></script>
+    
+</body>
+
+</html>

@@ -8,21 +8,21 @@ body {
 .container {
     height:210px;    
 }
-.word-container{
+.wordcontainer{
     height:auto;
 }
-/* For the left 'Guess A Letter!' and 'Guessed Letter' boxes. */
-.side-container {
+
+.sidecontainer {
     margin-top:45px;
     margin-left:130px;
     width:180px;
     text-align:center;
     opacity: .92;
 }
-.guessed-letters {
+.guessedletters {
     color:#6f5a2d;
 }
-.input-area {
+.inputarea {
     width:180px;
     height:31px;
     margin:auto;
@@ -33,24 +33,24 @@ body {
     border-radius:15px;
     background:#ebe2ce;
 }
-#letter-input {
+#letterinput {
     border:1px #6f5a2d solid;
     width:20pt;
     font-size:14pt;
     text-align:center;
 }
-.guessed-letter {
+.guessedletter {
     color:#792c15;
 }
-/* Word Box */
-.word-box {
+
+.wordbox {
     width:320px;
     margin:auto;
     margin-top:25px;
     text-align:center;
     opacity: .92;
 }
-.word-display {
+.worddisplay {
     background:#ebe2ce;
     border:1px #6f5a2d solid;
     height:31px;
@@ -59,7 +59,7 @@ body {
     -webkit-border-radius:15px;
     border-radius:15px;
 }
-.shown-letter {
+.shownletter {
     border-bottom: 3px #000 solid;
     padding: 0 2px;
     margin: 0 2px;

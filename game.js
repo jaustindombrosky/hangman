@@ -9,9 +9,9 @@ $(document).ready(resetGame);
 function win () { alert('You win!');  resetGame() ;}
 function lose () { alert('You lose!'); resetGame(); }
 function doKeypress () {
-    var tempChar = $('#letter-input').val().toLowerCase();
+    var tempChar = $('#letterinput').val().toLowerCase();
     var tempString = "";
-    $('#letter-input').val("");
+    $('#letterinput').val("");
     
 
     tempString = guessLetter( tempChar, gameShownAnswer, gameAnswer );
@@ -29,12 +29,12 @@ function doKeypress () {
         }
     }  
 }
-$('#letter-input').keyup( doKeypress );
+$('#letterinput').keyup( doKeypress );
 
-//break//
+//break global//
 
 
-var words = ['MountEverest', 'VictoriaFalls', 'GrandCanyon', 'GreatBarrieRreef', 'NorthernLights', 'ParicutinVolcano', 'HarborofRiodeaneiro'];
+var words = ['mounteverest', 'victoriafalls', 'grandcanyon', 'greatbarriereef', 'northernlights', 'paricutinvolcano', 'harborofiodejaneiro'];
 
 var areEqual = string1.toUpperCase() === string2.toUpperCase();
 
@@ -63,22 +63,22 @@ function guessLetter( letter, shown, answer ) {
     return shown;
 }
 function wrongLetter ( letter ) {
-    $('#wrong-letters').append(
-        $('<span/>').addClass('guessed-letter').text(letter));
+    $('#wrongletters').append(
+        $('<span/>').addClass('guessedletter').text(letter));
 }
 function resetUI () {
-    $('.body-part').remove();
-    $('.guessed-letter').remove();
-    $('.shown-letter').remove();
+    $('.bodypart').remove();
+    $('.guessedletter').remove();
+    $('.shownletter').remove();
 }
 function drawWord( answer ) {
     for ( i in answer ) {
-	$('.word-display').append(
-	    $('<span/>').addClass('shown-letter').html('&nbsp;'));
+	$('.worddisplay').append(
+	    $('<span/>').addClass('shownletter').html('&nbsp;'));
     }
 }
 function updateWord( answer ) {
-    $k = $('.shown-letter:first');
+    $k = $('.shownletter:first');
     for ( i in answer ) {
 	if ( answer.charAt(i) != '_' ) {
 	    $k.text( answer.charAt(i) );
