@@ -31,10 +31,10 @@ function doKeypress () {
 }
 $('#letterinput').keyup( doKeypress );
 
-//break global//
+alert('Guess the 7 Natural Wonders of the World')
+alert('Extra trick, use - for spaces')
 
-
-var words = ['mounteverest', 'victoriafalls', 'grandcanyon', 'greatbarriereef', 'northernlights', 'paricutinvolcano', 'harborofiodejaneiro'];
+var words = ['mount-everest', 'victoria-falls', 'grand-canyon', 'great-barrier-reef', 'northern-lights', 'paricutin-volcano', 'harbor-of-rio-de-janeiro'];
 
 var areEqual = string1.toUpperCase() === string2.toUpperCase();
 
@@ -67,7 +67,6 @@ function wrongLetter ( letter ) {
         $('<span/>').addClass('guessedletter').text(letter));
 }
 function resetUI () {
-    $('.bodypart').remove();
     $('.guessedletter').remove();
     $('.shownletter').remove();
 }
